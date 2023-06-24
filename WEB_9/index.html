@@ -3,19 +3,36 @@
 <head>
     <title>게임이 막히면 오는 가이드 공간</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">   
+    <script>
+        function a() {
+            alert("로그인을 확인하였습니다.")
+            location.href='main.html'
+        }
+        function s() {
+            alert("회원가입 창으로 이동합니다.")
+            location.href='signup.html'
+        }
+    </script> 
     <style>
-       h1{
-          color: rgb(0, 255, 229);
-          text-align: justify;
-          font-size: 200%;
-          border-bottom: 3px rgb(0, 255, 229) solid;
-       }
-       a {
-           text-decoration: none;
-       }
+        div {
+        text-align: center;
+        }
     </style>
 </head>
 <body>
-<h1>게임 가이드</h1><h2 style="color: aqua;"><a href="main.html">게임이 막히면 오는 가이드 공간</a></h2>
+<h1>게임 가이드</h1>
+<div>
+    <h1><button onclick="a()">로그인</button></h1>
+    <h2><button onclick="s()">회원가입</button></h2>
+    <div class="email">
+        <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+        <div id="emailError" class="error"></div>
+    </div>
+    <div class="password">
+        <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+        <div id="passwordError" class="error"></div>
+    </div>
+</div>
 </body>
 </html>

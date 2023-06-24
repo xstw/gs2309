@@ -1,0 +1,60 @@
+h1 {
+    color:aqua;
+    text-align: center;
+    font-size: 500%;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+ul, li {
+    list-style: none;
+}
+
+#welcome {
+    font-size: 50px;
+    border: 5px solid red;
+    border-radius: 30px;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+#welcome:hover {
+    color: blue;
+    background-color: cyan;
+    transition: 1s;
+}
+
+.menu_sub {
+    display: none;
+    padding: 10px 0;
+}
+
+.menu_main > li {
+    display: inline-block;
+    width: 150px;
+    background-color: deepskyblue;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.menu_main {
+    font-size: 0;
+}
+
+.menu_top {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.menu_main > li > a {
+    display: block;
+    padding: 10px 0;
+}
+
+.menu_main > li:hover > .menu_sub {
+    display: block;
+}
